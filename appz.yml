@@ -2,34 +2,31 @@ app:
   name: MySQL
   code: mysql
   notify: nsrahul@cloudbourne.com
-
 build:
   version: 8.0
   env: POC
   build_file: none
   output_files: output/*.zip
   image_template: mysql_cluster-8.0
-
 deploy:
   context: alpha/POC
   type: statefulset
   replicas: 3
   port:
     - 3306
-
 volumes:
   - name: data
     claim: mysql-data
     mount: /appz/data
     size: 5Gi
+    matchLabels: false
   - name: backup
     claim: mysql-backup
     mount: /appz/backup
     size: 5Gi
-
+    matchLabels: false
 properties:
   MYSQL_ROOT_PASSWORD:
     vault: MYSQL_ROOT_PASSWORD_KEY
   REPLICAS: 3
-
 revision: 2
