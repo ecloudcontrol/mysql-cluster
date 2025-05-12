@@ -29,4 +29,4 @@ properties:
   MYSQL_ROOT_PASSWORD:
     vault: MYSQL_ROOT_PASSWORD_KEY
   REPLICAS: 3
-revision: 3
+revision: 4
