@@ -1,0 +1,11 @@
+users:
+  - name: pocuser
+    password: $POC_USER_PASSWORD
+    
+databases:
+  - name: IMS
+  
+acl:
+  - database: IMS
+    user: pocuser
+    access: ALL
