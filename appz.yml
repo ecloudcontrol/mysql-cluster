@@ -30,5 +30,5 @@ properties:
     vault: MYSQL_ROOT_PASSWORD_KEY
   POC_USER_PASSWORD:
     vault: POC_USER_PASSWORD
-  REPLICAS: 3
+  REPLICAS: 5
 revision: 1
