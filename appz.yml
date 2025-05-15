@@ -28,5 +28,7 @@ volumes:
 properties:
   MYSQL_ROOT_PASSWORD:
     vault: MYSQL_ROOT_PASSWORD_KEY
+  POC_USER_PASSWORD:
+    vault: POC_USER_PASSWORD
   REPLICAS: 3
 revision: 1
