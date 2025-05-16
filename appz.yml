@@ -31,4 +31,4 @@ properties:
   POC_USER_PASSWORD:
     vault: POC_USER_PASSWORD
   REPLICAS: 3
-revision: 4
+revision: 1
